@@ -1,0 +1,21 @@
+//Membuat segitiga..
+#include <stdio.h>
+
+int main() {
+    int i, j, rows = 10; 
+
+    // Jika menggunakan input hapus "= 10"
+    // printf("Masukkan jumlah baris: ");
+    // scanf("%d", &rows);
+
+    // Membentuk segitiga
+    for(i = 1; i <= rows; i++) {
+        // Print bintang sesuai jumlah baris
+        for(j = 1; j <= i; j++) {
+            printf("* ");
+        }
+        printf("\n"); // Pindah ke baris berikutnya
+    }
+
+    return 0;
+}
