@@ -1,0 +1,25 @@
+//Membuat Piramida
+#include <stdio.h>
+
+int main() {
+    int i, j, space, rows = 10;
+
+    // Jika menggunakan input hapus "= 10" disamping rows
+    // printf("Masukkan jumlah baris: ");
+    // scanf("%d", &rows);
+
+    // Membentuk piramida
+    for(i = 1; i <= rows; i++) {
+        // Print spasi untuk membuat format piramida
+        for(space = 1; space <= rows - i; space++) {
+            printf("  ");
+        }
+        // Print bintang
+        for(j = 1; j <= 2 * i - 1; j++) {
+            printf("* ");
+        }
+        printf("\n"); // Pindah ke baris berikutnya
+    }
+
+    return 0;
+}
